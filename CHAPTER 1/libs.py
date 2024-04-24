@@ -10,13 +10,13 @@ def welcome_message():
     print(style)
 
 def exit_program():
-    print("\n GAMES AKAN BERHENTI")
+    print("\n PROGRAM AKAN BERHENTI")
     start = 3
     while start > 0 :   
         sleep(1)
         print(f"{start}...")
         start -= 1
-    print("GAMES TAWAMURE SELESAI!!!")
+    print("PROGRAM TELAH SELESAI!!!")
     
 if __name__ == '__main__':
     welcome_message()
