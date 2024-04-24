@@ -1,16 +1,17 @@
 from libs import welcome_message, exit_program
 from Games import tupai
-from Tools import warung
-
+from Tools import warung, face
 
 def menu():
-    user_option = int(input("Menu Program : \n 1. Games Tawamure \n 2. Warung Mini \n 3. Keluar Program\n\n Silahkan Pilih : "))
+    user_option = int(input("Menu Program : \n 1. Games Tawamure \n 2. Warung Mini \n 3. Face Detection \n 4. Keluar Program\n\n Silahkan Pilih : "))
 
     if user_option == 1 :
         tupai.start()
     elif user_option == 2 :
         warung.start()
     elif user_option == 3 :
+        face.start()
+    elif user_option == 4:
         exit_program()
     else :
         print("Hanya boleh pilih program yang tersedia")
